@@ -1,16 +1,14 @@
 import { useState, useEffect } from 'react';
 import axios from 'axios';
-import GalleryItem from '..GalleryItem/GalleryItem.jsx';
+import GalleryItem from '../GalleryItem/GalleryItem.jsx';
 
 
 function GalleryList({ gallery }) {
 
-
-
     return (
-
         <div>
             <h1>Gallery List</h1>
+            <div className="gallery-list">
             <p>
                 {gallery.map(picture => (
                     <GalleryItem
@@ -19,6 +17,7 @@ function GalleryList({ gallery }) {
                     />
                 ))}
             </p>
+        </div>
         </div>
     )
 
