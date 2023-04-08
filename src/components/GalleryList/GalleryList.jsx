@@ -1,0 +1,1 @@
+import GalleryItems from '../GalleryItem/GalleryItem.jsx';

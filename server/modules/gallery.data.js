@@ -4,7 +4,7 @@ const galleryItems = [
     { id: 3,  title: 'Halloween', path: 'images/Halloween.png', description: 'Photo of Luna at Halloween.', likes: 8 },
     { id: 4,  title: 'Bath time', path: 'images/Bath.png', description: 'Photo of Luna after her bath.', likes: 3 },
     { id: 5,  title: 'Christmas', path: 'images/Christmas.png', description: 'Photo of Luna at Christmas.', likes: 9 },
-    { id: 5,  title: 'Playtime', path: 'images/Playtime.png', description: 'Photo of Luna after Playtime.', likes: 10 }
+    { id: 5,  title: 'Playtime', path: 'images/Playtime.png', description: 'Photo of Luna after Playtime.', likes: 10 },
 ];
 
 module.exports = galleryItems;

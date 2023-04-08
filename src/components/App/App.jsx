@@ -1,5 +1,7 @@
 import React from 'react';
 import './App.css';
+import GalleryList from '../GalleryList/GalleryList.jsx'
+
 
 function App() {
   return (
