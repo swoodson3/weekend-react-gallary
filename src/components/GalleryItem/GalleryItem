@@ -1,0 +1,15 @@
+import react from 'react';
+import {useState} from 'react';
+// import {useParams} from 'react-router-dom';
+
+function GalleryItem({ }) {
+    
+
+    return (
+        <>
+
+        </>
+    )
+}
+
+export default GalleryItem;
