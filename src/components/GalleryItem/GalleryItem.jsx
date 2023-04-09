@@ -32,7 +32,11 @@ function GalleryItem({ picture }) {
           </div> 
           <div className="likes">
             <button onClick={handleLikeClick}>Like</button>
-            <p>{likes} likes</p>
+            {likes === 0 ? (
+          <p>No likes yet</p>
+        ) : (
+          <p>{likes} like{likes === 1 ? '' : 's'}</p>
+        )}
           </div>
         </div>
       );
