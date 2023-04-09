@@ -1,6 +1,7 @@
 const galleryItems = [
     {
-        id: 1, title: 'A small goat',
+        id: 1, 
+        title: 'A small goat',
         path: 'images/goat_small.jpg',
         description: 'Photo of a goat taken at Glacier National Park.',
         likes: 0
@@ -38,7 +39,7 @@ const galleryItems = [
     },
     
     {
-        id: 5,
+        id: 6,
         title: 'Playtime',
         path: 'images/Playtime.png',
         description: 'Photo of Luna after Playtime.',

@@ -1,0 +1,27 @@
+.gallery-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  
+  .gallery-item {
+    width: calc(33.33% - 5px);
+    margin-top: 90px;
+    margin-bottom: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  
+  .gallery-item img {
+    width: 200px;
+    height: 200px;
+  }
+
+  .description {
+    max-width: 200px; /* set to the width of the image */
+    word-wrap: break-word;
+    white-space: normal;
+    text-align: center; /* optionally align the text to the center */
+  }

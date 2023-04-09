@@ -1,22 +1,21 @@
 import { useState, useEffect } from 'react';
 import axios from 'axios';
 import GalleryItem from '../GalleryItem/GalleryItem.jsx';
+import './GalleryList.css';
 
 
 function GalleryList({ gallery }) {
 
     return (
         <div>
-            <h1>Gallery List</h1>
             <div className="gallery-list">
-            <p>
                 {gallery.map(picture => (
                     <GalleryItem
                         key={picture.id}
                         picture={picture}
                     />
                 ))}
-            </p>
+            
         </div>
         </div>
     )

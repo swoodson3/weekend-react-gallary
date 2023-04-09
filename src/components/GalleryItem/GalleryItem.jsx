@@ -1,5 +1,6 @@
 import axios from 'axios'
-import { useState, useEffect } from 'react';
+import { useState } from 'react';
+
 
 
 function GalleryItem({ picture }) {
@@ -11,24 +12,24 @@ function GalleryItem({ picture }) {
     };
 
     const handleLikeClick = () => {
+      setLikes(likes + 1)
         axios.put(`/gallery/like/${picture.id}`).then((response) => {
             // update the number of likes for this picture
-            setLikes(response.data.likes);
         });
     };
 
     return (
         <div className="gallery-item">
+          <div onClick={handleImageClick}>
+           {showDescription ? (
+            <p className="description">{picture.description}</p>
+          ) : (
           <img
-            onClick={handleImageClick}
             src={picture.path}
             alt={picture.description}
-            width="100"
-            height="100"
           />
-          {showDescription ? (
-            <p className="description">{picture.description}</p>
-          ) : null}
+          )}
+          </div> 
           <div className="likes">
             <button onClick={handleLikeClick}>Like</button>
             <p>{likes} likes</p>
