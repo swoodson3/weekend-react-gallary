@@ -1,6 +1,9 @@
 # Gallery of My Life
 This application is designed to help you create a gallery page to share pictures of things that are important to you. Visitors can click on an image to see a description and use a button to "like" an image.
 
+## Interface
+<img width="1341" alt="Screen Shot 2023-04-30 at 6 13 52 PM" src="https://user-images.githubusercontent.com/111030402/235380442-f4d73877-7f7b-4155-85bc-d7dfda9c6b02.png">
+
 ## Setup
 1. Add a few images to the public/images folder.
 2. Modify the server/modules/data.js to include an id, title, description, and path for each of your images.  3. Each id should be a unique number (e.g. 1, 2, 3...).
